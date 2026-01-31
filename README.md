@@ -1,6 +1,6 @@
 # Apollo.io Java Client
 
-A Java client library for the Apollo.io API, built with Java 21 and using the native Java HTTP Client.
+A Java client library for the Apollo.io API, built with Java 25 and using the native Java HTTP Client.
 
 ## Features
 
@@ -10,6 +10,7 @@ A Java client library for the Apollo.io API, built with Java 21 and using the na
 - Fluent builder pattern for requests
 - Comprehensive error handling
 - Zero external HTTP client dependencies (uses Java 11+ HttpClient)
+- Clean, boilerplate-free code using Lombok
 
 ## Installation
 

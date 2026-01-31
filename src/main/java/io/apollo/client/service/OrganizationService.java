@@ -2,6 +2,7 @@ package io.apollo.client.service;
 
 import io.apollo.client.http.HttpClient;
 import io.apollo.client.model.Organization;
+import lombok.Data;
 
 /**
  * Service for organization-related API operations.
@@ -37,15 +38,8 @@ public class OrganizationService {
 
     private record EnrichRequest(String domain) {}
 
+    @Data
     private static class OrganizationEnrichResponse {
         private Organization organization;
-
-        public Organization getOrganization() {
-            return organization;
-        }
-
-        public void setOrganization(Organization organization) {
-            this.organization = organization;
-        }
     }
 }

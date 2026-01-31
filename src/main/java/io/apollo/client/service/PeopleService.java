@@ -4,6 +4,7 @@ import io.apollo.client.http.HttpClient;
 import io.apollo.client.model.Person;
 import io.apollo.client.model.PeopleSearchRequest;
 import io.apollo.client.model.PeopleSearchResponse;
+import lombok.Data;
 
 /**
  * Service for people-related API operations.
@@ -60,15 +61,8 @@ public class PeopleService {
 
     private record EnrichRequest(String email, String linkedin_url) {}
 
+    @Data
     private static class PersonEnrichResponse {
         private Person person;
-
-        public Person getPerson() {
-            return person;
-        }
-
-        public void setPerson(Person person) {
-            this.person = person;
-        }
     }
 }

@@ -22,9 +22,15 @@ dependencies {
     // JSON processing
     implementation 'com.google.code.gson:gson:2.10.1'
 
+    // Lombok for reducing boilerplate
+    compileOnly 'org.projectlombok:lombok:1.18.40'
+    annotationProcessor 'org.projectlombok:lombok:1.18.40'
+
     // Testing
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testCompileOnly 'org.projectlombok:lombok:1.18.40'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.40'
 }
 
 tasks.named('test') {
